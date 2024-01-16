@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.helloworld";
+option java_outer_classname = "HelloWorldProto";
+option objc_class_prefix = "HLW";
+
+package testProcess;
+
+service TestProcess {
+  rpc TestHello (TESTRequest) returns (TESTReply) {}
+
+  rpc TestHelloStreamReply (TESTRequest) returns (stream TESTReply) {}
+}
+
+message TESTRequest {
+  string feature = 1;
+}
+
+message TESTReply {
+  string name = 1;
+}
