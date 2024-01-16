@@ -3,8 +3,8 @@ from __future__ import print_function
 import logging
 
 import grpc
-import testProcess_pb2
-import testProcess_pb2_grpc
+from pb2file import testProcess_pb2
+from pb2file import testProcess_pb2_grpc
 
 
 def run():

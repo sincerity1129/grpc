@@ -2,8 +2,8 @@ from concurrent import futures
 import logging
 
 import grpc
-import testProcess_pb2
-import testProcess_pb2_grpc
+from pb2file import testProcess_pb2
+from pb2file import testProcess_pb2_grpc
 
 
 class TestProcess(testProcess_pb2_grpc.TestProcessServicer):
